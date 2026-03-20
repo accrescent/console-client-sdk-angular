@@ -29,6 +29,7 @@
     "peerDependencies": {
         "@angular/common": "^21.0.0",
         "@angular/core": "^21.0.0",
+        "@bufbuild/protobuf": "^2.11.0",
         "rxjs": "^6.5.3 || ^7.4.0"
     }
 }
