@@ -9,10 +9,22 @@
     },
     "type": "module",
     "scripts": {
+        "build": "buf generate && node scripts/generatePackaging.ts && ng-packagr",
+        "clean": "node scripts/cleanPackaging.ts",
         "fmt": "oxfmt",
         "fmt:check": "oxfmt --check"
     },
     "devDependencies": {
+        "@accrescent/protoc-gen-grpc-angular": "^0.2.0",
+        "@bufbuild/buf": "^1.66.1",
+        "@bufbuild/protoc-gen-es": "^2.11.0",
+        "@types/node": "^25.5.0",
+        "ng-packagr": "^21.2.1",
         "oxfmt": "^0.41.0"
+    },
+    "peerDependencies": {
+        "@angular/common": "^21.0.0",
+        "@angular/core": "^21.0.0",
+        "rxjs": "^6.5.3 || ^7.4.0"
     }
 }
