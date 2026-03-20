@@ -12,7 +12,10 @@
         "build": "buf generate && node scripts/generatePackaging.ts && ng-packagr",
         "clean": "node scripts/cleanPackaging.ts",
         "fmt": "oxfmt",
-        "fmt:check": "oxfmt --check"
+        "fmt:check": "oxfmt --check",
+        "lint": "oxlint",
+        "lint:ci": "oxlint --deny-warnings --format=github",
+        "lint:fix": "oxlint --fix"
     },
     "devDependencies": {
         "@accrescent/protoc-gen-grpc-angular": "^0.2.0",
@@ -20,7 +23,8 @@
         "@bufbuild/protoc-gen-es": "^2.11.0",
         "@types/node": "^25.5.0",
         "ng-packagr": "^21.2.1",
-        "oxfmt": "^0.41.0"
+        "oxfmt": "^0.41.0",
+        "oxlint": "^1.56.0"
     },
     "peerDependencies": {
         "@angular/common": "^21.0.0",
