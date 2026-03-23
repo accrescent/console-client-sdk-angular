@@ -6,10 +6,14 @@ version: v2
 plugins:
   - local: protoc-gen-es
     out: .
-    opt: target=ts
+    opt:
+      - target=ts
+      - valid_types=protovalidate_required
     include_imports: true
   - local: protoc-gen-grpc-angular
-    opt: target=ts
+    opt:
+      - target=ts
+      - valid_types=true
     out: .
 inputs:
   # Update with `buf registry module commit list buf.build/accrescent/console-api:<tag>`
