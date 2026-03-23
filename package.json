@@ -1,6 +1,6 @@
 {
     "name": "@accrescent/console-client-sdk-angular",
-    "version": "0.9.0",
+    "version": "0.10.0",
     "description": "Angular client SDK for the Accrescent console API",
     "license": "Apache-2.0",
     "repository": {
