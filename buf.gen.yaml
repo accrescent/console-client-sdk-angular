@@ -17,4 +17,4 @@ plugins:
     out: .
 inputs:
   # Update with `buf registry module commit list buf.build/accrescent/console-api:<tag>`
-  - module: buf.build/accrescent/console-api:dab75e65b1994ceb98677f9c082e2d45 # v0.8.0
+  - module: buf.build/accrescent/console-api:9f3ce9987b434426b50f1e12eaefc0c5 # v0.9.0
